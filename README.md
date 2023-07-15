@@ -27,9 +27,10 @@ A JavaScript dialogue engine with support for the following features:
 
 ## TODO
 
-- [ ] Write dialogue
+- [X] Write dialogue
+- [X] Write dialogue options
+- [ ] State transitions
 - [ ] Write timed dialogue
-- [ ] Write dialogue options
 - [ ] Skills
 - [ ] Skill-basaed dialogue options
 - [ ] Hidden skill checks to reveal dialogue lines
