@@ -53,6 +53,10 @@ demoConversation.set("redPill", new State([
     new DialogueOption("I don't feel anything.", "exit")
 ]));
 
+demoConversation.set("exit", new State([
+    "Goodbye."
+],[]));
+
 const demoRenderer = new ConsoleRenderer();
 const demoEngine = new Engine(demoRenderer, initialStateID, function(stateID) {
     return demoConversation.get(stateID);
@@ -62,3 +66,9 @@ export function startDemo() {
     demoEngine.start();
 }
 globalThis.startDemo = startDemo;
+
+export function takeOption(n) {
+    const nextStateID = demoEngine.state.options[n].nextStateID;
+    demoEngine.gotoState(nextStateID);
+}
+globalThis.takeOption = takeOption;

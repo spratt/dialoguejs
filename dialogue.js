@@ -31,7 +31,11 @@ export class Engine {
     }
 
     start() {
-        this.state = this.getState(this.initialStateID);
+        this.gotoState(this.initialStateID);
+    }
+
+    gotoState(state) {
+        this.state = this.getState(state);
         for (const line of this.state.lines) {
             this.renderer.renderLine(line);
         }

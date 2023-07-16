@@ -19,7 +19,7 @@ A JavaScript dialogue engine with support for the following features:
 
 - [X] Write dialogue
 - [X] Write dialogue options
-- [ ] State transitions
+- [X] State transitions
 - [ ] Write timed dialogue
 - [ ] Skills
 - [ ] Skill-basaed dialogue options

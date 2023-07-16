@@ -15,7 +15,9 @@ export class ConsoleRenderer extends Renderer {
     }
 
     renderOptions(options) {
-        console.log("You can respond with one of the following: ");
+        if (options.length > 0) {
+            console.log("You can respond with one of the following: ");
+        }
         options.forEach((option, i) => {
             console.log(i, option.line);
         });
